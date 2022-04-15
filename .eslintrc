@@ -62,6 +62,7 @@
     "@typescript-eslint/naming-convention": "off",
     "import/no-cycle": "off",
     "@typescript-eslint/no-shadow": "off",
-    "@typescript-eslint/indent": "off"
+    "@typescript-eslint/indent": "off",
+    "no-console": 1
   }
 }

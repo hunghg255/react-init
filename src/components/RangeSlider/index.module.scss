@@ -1,0 +1,26 @@
+.wrapper {
+  padding: 16px 8px 24px 8px;
+  width: 210px;
+  min-height: 176px;
+  border-radius: 4px;
+
+  .rangeValues {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 4px;
+  }
+
+  .values {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+  }
+
+  .wrapBtn {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+  }
+}

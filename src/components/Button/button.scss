@@ -1,0 +1,230 @@
+.btn {
+  border-radius: 0.75em;
+  @border-width: 1px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  &-default {
+    background: var(--yellow-200);
+    color: var(--Dark-2);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5em;
+    &:not(.disabled, .loading)&:hover,
+    :focus {
+      background: var(--yellow-100);
+    }
+    &.disabled {
+      background: var(--Darker);
+      color: var(--Lighter);
+      cursor: not-allowed;
+    }
+    &.loading {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      .loading-btn {
+        order: 99;
+        margin-right: 0.5em;
+        display: inline-block;
+        height: 1.2em;
+        width: 1.2em;
+        animation: lds-dual-ring 1.2s linear infinite;
+        * {
+          fill: var(--Dark-2);
+        }
+      }
+      @keyframes lds-dual-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+  &-outline {
+    background: transparent;
+    color: var(--yellow-200);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    line-height: 1.5em;
+    &:not(.disabled, .loading)&:hover,
+    :focus {
+      background: var(--yellow-100);
+      color: var(--Dark-2);
+    }
+    &.disabled {
+      color: var(--Darker);
+    }
+    &.loading {
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      .loading-btn {
+        order: 99;
+        margin-right: 0.5em;
+        display: inline-block;
+        height: 1.2em;
+        width: 1.2em;
+        animation: lds-dual-ring 1.2s linear infinite;
+        * {
+          fill: var(--yellow-100);
+        }
+      }
+      @keyframes lds-dual-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+    &.btn-danger {
+      background: rgba(255, 106, 106, 0.07);
+      border: 1px solid #ff6a6a;
+      color: #ff6a6a;
+      &:hover {
+        background: rgba(255, 106, 106, 0.1) !important;
+        color: #ff6a6a !important;
+      }
+    }
+  }
+  &-success {
+    background: rgba(51, 204, 131, 0.15);
+    color: #33cc83;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    line-height: 1.5em;
+    &.loading {
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      .loading-btn {
+        order: 99;
+        margin-right: 0.5em;
+        display: inline-block;
+        height: 1.2em;
+        width: 1.2em;
+        animation: lds-dual-ring 1.2s linear infinite;
+        * {
+          fill: var(--yellow-100);
+        }
+      }
+      @keyframes lds-dual-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+    &.btn-danger {
+      background: rgba(255, 106, 106, 0.07);
+      border: 1px solid #ff6a6a;
+      color: #ff6a6a;
+      &:hover {
+        background: rgba(255, 106, 106, 0.1) !important;
+        color: #ff6a6a !important;
+      }
+    }
+  }
+  &-ghost {
+    background: transparent;
+    color: var(--Headline);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5em;
+    &:not(.disabled, .loading)&:hover,
+    :focus {
+      background: var(--Dark-4);
+      color: var(--yellow-300);
+    }
+    &.disabled {
+      color: var(--Darker);
+    }
+    &.loading {
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      .loading-btn {
+        order: 99;
+        margin-right: 0.5em;
+        display: inline-block;
+        height: 1.2em;
+        width: 1.2em;
+        animation: lds-dual-ring 1.2s linear infinite;
+        * {
+          fill: var(--Headline);
+        }
+      }
+      @keyframes lds-dual-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+  &-violet {
+    display: flex;
+    align-items: center;
+    color: var(--White);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5em;
+    background: var(--Violet-200);
+    line-height: 1.5em;
+    &:not(.disabled, .loading)&:hover,
+    :focus {
+      background: var(--Violet-300);
+    }
+    &.disabled {
+      background: var(--Darker);
+      color: var(--Lighter);
+      cursor: not-allowed;
+    }
+    &.loading {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      .loading-btn {
+        order: 99;
+        margin-right: 0.5em;
+        display: inline-block;
+        height: 1.2em;
+        width: 1.2em;
+        animation: lds-dual-ring 1.2s linear infinite;
+        * {
+          fill: var(--White);
+        }
+      }
+      @keyframes lds-dual-ring {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+
+  .prefix-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+  }
+}

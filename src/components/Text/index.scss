@@ -1,0 +1,122 @@
+.text {
+  &-click {
+    cursor: pointer;
+  }
+  &-h1-plus {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 72px;
+  }
+  &-h1 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 39px;
+  }
+  &-h1-light {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 39px;
+  }
+  &-h2 {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  &-h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &-h3-bold {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &-h4 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &-p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+  }
+  &-p-bold {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 2em;
+  }
+  &-p-14 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  &-p-14-bold {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  &-p-12 {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  &-p-12-bold {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  &-lb {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  &-lb-bold {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  &-violet-100 {
+    color: var(--Violet-100);
+  }
+  &-violet-200 {
+    color: var(--Violet-200);
+  }
+  &-yellow-100 {
+    color: var(--yellow-100);
+  }
+  &-yellow-300 {
+    color: var(--yellow-300);
+  }
+  &-violet-300 {
+    color: var(--Violet-300);
+  }
+  &-headline {
+    color: var(--Headline);
+  }
+  &-White {
+    color: var(--White);
+  }
+  &-yellow-200 {
+    color: var(--yellow-200);
+  }
+  &-Lighter {
+    color: var(--Lighter);
+  }
+  &-darker {
+    color: var(--Darker);
+  }
+  &-dark-1 {
+    color: var(--Dark-1);
+  }
+  &-dark-2 {
+    color: var(--Dark-2);
+  }
+  &-dark-3 {
+    color: var(--Dark-3);
+  }
+  &-dark-4 {
+    color: var(--Dark-4);
+  }
+}

@@ -1,0 +1,34 @@
+:root {
+  --Violet-100: #9f82ff;
+  --Violet-200: #7b53ff;
+  --Violet-300: #6333ff;
+
+  --yellow-100: #ffe87b;
+  --yellow-200: #f7dc5d;
+  --yellow-300: #ebcb38;
+
+  --Headline: #eef5f8;
+  --White: #ffffff;
+
+  //Body
+  --Lighter: #778cac;
+  --Darker: #3e4859;
+  --Dark-1: #15151b;
+  --Dark-2: #1a1a22;
+  --Dark-3: #22222c;
+  --Dark-4: #212330;
+
+  --Fire: #ff5a5a;
+}
+// violet-300
+$Violet-100: #9f82ff;
+
+
+// class
+
+.violet-100 {
+  color: $Violet-100;
+  &::before {
+    color: $Violet-100 !important;
+  }
+}

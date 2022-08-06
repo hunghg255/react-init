@@ -1,7 +1,9 @@
 @import './colors.scss';
 @import './fonts.scss';
-@import './modal.scss';
 
+* {
+  box-sizing: border-box;
+}
 html {
   font-size: 16px;
 }

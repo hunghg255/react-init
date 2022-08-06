@@ -1,5 +1,5 @@
 import React from 'react';
-import Tooltip from 'rc-tooltip';
+import RcTooltip from 'rc-tooltip';
 
 interface Props {
   children: any;
@@ -9,17 +9,17 @@ interface Props {
   visible?: boolean;
 }
 
-const RCTooltip = ({ children, placement = 'top', title = '', overlayClassName, ...rest }: Props) => {
+const Tooltip = ({ children, placement = 'top', title = '', overlayClassName, ...rest }: Props) => {
   return (
-    <Tooltip
+    <RcTooltip
       placement={placement}
       overlay={<div className='tooltip-overlay'>{title}</div>}
       overlayClassName={overlayClassName}
       {...rest}
     >
       {children}
-    </Tooltip>
+    </RcTooltip>
   );
 };
 
-export default RCTooltip;
+export default Tooltip;
